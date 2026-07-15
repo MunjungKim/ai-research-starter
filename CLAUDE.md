@@ -3,7 +3,7 @@
 <!-- Keep this short — Claude loads it every session. Target under 200 lines. -->
 
 **Project:** [YOUR PROJECT NAME]
-**Precedence:** system constraints > explicit user request > project CLAUDE.md > this file.
+
 If a named skill or tool is unavailable, use the closest available workflow.
 
 I'm a researcher, not a software engineer. Explain choices in plain language,
