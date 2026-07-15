@@ -54,20 +54,6 @@ project/
 
 ---
 
-## Use Skills When Relevant
-
-At the start of a task, check for a clearly relevant skill and invoke it first:
-- Vague research idea / sharpening an RQ → `sharpen-my-rq`
-- Planning a paper → `plan-my-paper`
-- New dataset → `datacheck`
-- Figures / plots → `viz`
-- Reference & citation check → `check-refs`
-- Manuscript review → `critique-manuscript`
-
-Use `AskUserQuestion` (via `ToolSearch`) for structured questions; fall back to plain text if unavailable.
-
----
-
 ## Think Before Acting
 
 - Don't jump to the first implementation. For non-trivial tasks: explore a few
