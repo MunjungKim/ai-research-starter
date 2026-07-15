@@ -1,0 +1,15 @@
+Create this folder structure in the current directory:
+
+CLAUDE.md              # context & rules — the key file
+.claude/               # settings + custom skills
+seeds/                 # seed papers & sources
+data/raw/              # original data — never modify
+ideas/                 # one file per research idea
+drafts/                # writing (.tex .md .docx)
+papers/figures/        # manuscripts + visual outputs
+workflow/              # numbered pipeline — run in order
+notebook/              # numbered analysis notebooks
+notes/                 # project management hub
+results/               # large outputs (heavy files)
+deprecated/ · trash/   # archive & soft-delete — never rm
+pyproject.toml · uv.lock   # Python env via uv
