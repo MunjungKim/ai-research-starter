@@ -29,13 +29,20 @@ project/
 ├── .claude/             # settings, skills, rules, hooks
 ├── seeds/               # seed papers & sources
 ├── data/raw/            # original data — READ-ONLY, never modify
-├── ideas/               # one file per research idea
 ├── workflow/            # numbered pipeline — run in order
+│   └── scripts/         # reusable helper scripts
 ├── notebook/            # numbered analysis notebooks
 ├── drafts/              # writing (.tex .md .docx)
-├── papers/figures/      # manuscripts + visual outputs
+├── papers/              # one folder per target journal
+│   └── [journal name]/  # e.g. AJPS/ — the manuscript
+│       └── figures/     # figures for that submission
 ├── results/             # large / heavy outputs
-├── notes/               # project hub, plans, MEMORY.md
+├── notes/               # project hub — ongoing thinking as you work
+│   ├── ideas/           # one file per research idea
+│   ├── dashboard.html   # live project dashboard
+│   ├── meetings/        # meeting notes
+│   ├── updates/         # progress updates
+│   └── MEMORY.md        # Claude's running notes
 ├── deprecated/ · trash/ # archive & soft-delete — never rm
 └── pyproject.toml · uv.lock   # Python env via uv
 ```
@@ -44,16 +51,6 @@ project/
 - `workflow/` runs in numbered order — don't reorder scripts.
 - Move, don't delete: retire files to `deprecated/` or `trash/`. Never `rm`.
 - Human-readable folder and file names.
-
----
-
-## Commands
-
-```bash
-uv run workflow/01_*.py        # run a pipeline step (in order)
-uv add <package>               # add a dependency
-uv run jupyter lab             # open notebooks
-```
 
 ---
 
@@ -73,6 +70,8 @@ Use `AskUserQuestion` (via `ToolSearch`) for structured questions; fall back to 
 
 ## Think Before Acting
 
+- Don't jump to the first implementation. For non-trivial tasks: explore a few
+  approaches, list pros/cons and risks for each, then let me choose before proceeding.
 - State your assumptions. If uncertain, ask — don't guess.
 - Multiple interpretations → present them, don't pick one silently.
 - If a simpler analysis exists, say so.
