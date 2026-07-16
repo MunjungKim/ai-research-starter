@@ -30,3 +30,11 @@ paths:
 ## After writing (explanation stage)
 - Once the code is done, pick the 3 functions or patterns I'm most likely
   not to know and explain them separately.
+
+## Naming & organization
+- Inside `notebook/`, group each task in a purpose-named folder, with a date suffix:
+  `<topic>_analysis_YYYYMMDD/` — e.g. `turnout_analysis_20260716/`.
+  Add the date because the same analysis often gets revisited and re-run
+  differently over time, so each pass keeps its own dated folder.
+- Inside that folder, number the notebooks in run order with a `00_`, `01_`, `02_` prefix
+  — e.g. `00_explore.ipynb`, `01_clean.ipynb`, `02_model.ipynb`.
