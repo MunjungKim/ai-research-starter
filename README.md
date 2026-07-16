@@ -13,6 +13,12 @@ the whole layout for you.
 replace `[YOUR PROJECT NAME]`. Trim or add rules to fit your field — it's a starting
 point, not a fixed template.
 
+**3. (Optional) Add a path-scoped rule.** Copy the [`.claude/`](.claude) folder into
+your project. The example [`.claude/rules/notebook.md`](.claude/rules/notebook.md)
+only loads when Claude touches a notebook — so the "explain the plan first, keep the
+code undergraduate-level" guidance stays out of context until it's actually needed.
+Edit the `paths:` globs at the top to match your own layout.
+
 That's it. Claude reads `CLAUDE.md` at the start of every session, so your project
 context and conventions travel with you.
 
@@ -22,6 +28,7 @@ context and conventions travel with you.
 | --- | --- |
 | `CLAUDE.md` | Project rules & context, loaded every session (< 200 lines) |
 | `folder-structure.txt` | The folder layout — paste it to Claude to scaffold |
+| `.claude/rules/notebook.md` | Example **path-scoped rule** — loads only for notebooks |
 
 ## Why this structure
 
@@ -29,3 +36,11 @@ context and conventions travel with you.
 - **`workflow/` is a numbered pipeline** — run order is baked into filenames.
 - **Move, don't delete** — retire files to `deprecated/` or `trash/`, never `rm`.
 - **`uv` for the Python env** — reproducible, fast.
+
+## Learn more
+
+- **CLAUDE.md & path-scoped rules** — official docs:
+  [How Claude remembers your project](https://code.claude.com/docs/en/memory)
+  (see [Organize rules with `.claude/rules/`](https://code.claude.com/docs/en/memory#organize-rules-with-claude%2Frules%2F)).
+- **When to use CLAUDE.md vs. rules vs. skills vs. hooks** —
+  [Steering Claude Code](https://claude.com/blog/steering-claude-code-skills-hooks-rules-subagents-and-more).
