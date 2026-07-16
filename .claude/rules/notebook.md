@@ -38,3 +38,7 @@ paths:
   differently over time, so each pass keeps its own dated folder.
 - Inside that folder, number the notebooks in run order with a `00_`, `01_`, `02_` prefix
   — e.g. `00_explore.ipynb`, `01_clean.ipynb`, `02_model.ipynb`.
+
+## Running notebooks
+- Run and verify notebooks through the Jupyter MCP (a live kernel), not by
+  guessing outputs — execute each cell and read the real result before moving on.
