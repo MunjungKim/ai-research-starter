@@ -16,4 +16,3 @@ notes/meetings/        # meeting notes
 notes/updates/         # progress updates
 results/               # large outputs (heavy files)
 deprecated/ · trash/   # archive & soft-delete — never rm
-pyproject.toml · uv.lock   # Python env via uv
