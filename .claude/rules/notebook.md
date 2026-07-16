@@ -33,7 +33,7 @@ paths:
 
 ## Naming & organization
 - Inside `notebook/`, group each task in a purpose-named folder, with a date suffix:
-  `<topic>_analysis_YYYYMMDD/` — e.g. `turnout_analysis_20260716/`.
+  `<topic>_YYYYMMDD/` — e.g. `turnout_20260716/`.
   Add the date because the same analysis often gets revisited and re-run
   differently over time, so each pass keeps its own dated folder.
 - Inside that folder, number the notebooks in run order with a `00_`, `01_`, `02_` prefix
